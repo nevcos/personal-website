@@ -18,6 +18,15 @@
   margin: 0;
 }
 
+.icon {
+  height: 1.2em;
+  vertical-align: text-top;
+}
+
+.note {
+  font-size: 0.6rem;
+}
+
 /* Generic (reset, ...) */
 
 * {
@@ -29,10 +38,14 @@ html {
   font-size: var(--main-text-size);
 }
 h1 {
-  margin: 1rem 0;
+  margin: 0;
 }
 
 /* Elements */
+
+header {
+  margin: 1.2rem 0;
+}
 
 body {
   padding: 0;
@@ -59,12 +72,14 @@ footer {
 
   background-color: white;
   box-shadow: 5px 5px 10px var(--main-shadow-color);
-  width: 200px;
+  max-width: 220px;
 }
 
 .❤ {
   display: grid;
   grid-template-columns: repeat(auto-fill, 20px);
+  justify-content: center;
+  align-content: center;
   gap: 1rem;
 }
 
