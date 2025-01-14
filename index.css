@@ -2,11 +2,22 @@
 
 /* Settings */
 :root {
+  --main-bg-color: #eee;
   --main-text-color: #666;
   --main-text-weight: 300;
   --main-text-size: 22px;
   --main-text-font-family: Ubuntu, "Segoe UI", Verdana, sans-serif;
   --main-shadow-color: #ddd;
+  --card-bg-color: white;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --main-bg-color: #111;
+    --main-shadow-color: #111;
+    --main-text-color: #eee;
+    --card-bg-color: #222;
+  }
 }
 
 /* Tools */
@@ -50,6 +61,7 @@ header > h1 {
 }
 
 body {
+  color-scheme: light dark;
   padding: 0;
   margin: 0;
   display: grid;
@@ -58,7 +70,7 @@ body {
   overflow: hidden;
   text-align: center;
   height: 100vh;
-  background-color: #eee;
+  background-color: var(--main-bg-color);
 }
 
 footer {
@@ -72,7 +84,7 @@ footer {
   margin: 1em;
   border-radius: 9px;
 
-  background-color: white;
+  background-color: var(--card-bg-color);
   box-shadow: 5px 5px 10px var(--main-shadow-color);
   max-width: 220px;
 }
