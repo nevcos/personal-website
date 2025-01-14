@@ -2,19 +2,18 @@
 
 /* Settings */
 :root {
-  --main-bg-color: #eee;
+  --main-bg: linear-gradient(-45deg, #dad5cc, #e1d1d1, #c5cdd5, #b9c5b4);
   --main-text-color: #666;
   --main-text-weight: 300;
   --main-text-size: 22px;
   --main-text-font-family: Ubuntu, "Segoe UI", Verdana, sans-serif;
-  --main-shadow-color: #ddd;
+  --main-shadow-color: rgba(0,0,0,.3);
   --card-bg-color: white;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --main-bg-color: #111;
-    --main-shadow-color: #111;
+    --main-bg: linear-gradient(-45deg, #8e4632, #6c1c3b, #125570, #105c4a);
     --main-text-color: #eee;
     --card-bg-color: #222;
   }
@@ -35,6 +34,18 @@
 
 .note {
   font-size: 0.6rem;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0 0;
+  }
 }
 
 /* Generic (reset, ...) */
@@ -70,7 +81,10 @@ body {
   overflow: hidden;
   text-align: center;
   height: 100vh;
-  background-color: var(--main-bg-color);
+
+  background: var(--main-bg);
+  background-size: 400% 400%;
+  animation: gradient 60s ease infinite;
 }
 
 footer {
