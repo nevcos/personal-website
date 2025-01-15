@@ -2,7 +2,7 @@
 
 /* Settings */
 :root {
-  --main-day-elapsed-seconds: 0;
+  --main-day-elapsed-seconds: var(--main-day-elapsed-seconds, 0);
   --main-bg: linear-gradient(-30deg, #105c4a, #125570, #6c1c3b, #8e4632);
   --main-text-color: #333;
   --main-text-weight: 300;
