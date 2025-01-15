@@ -2,8 +2,8 @@
 
 /* Settings */
 :root {
-  --main-bg: linear-gradient(-45deg, #dad5cc, #e1d1d1, #c5cdd5, #b9c5b4);
-  --main-text-color: #666;
+  --main-bg: linear-gradient(-30deg, #105c4a, #125570, #6c1c3b, #8e4632);
+  --main-text-color: #333;
   --main-text-weight: 300;
   --main-text-size: 22px;
   --main-text-font-family: Ubuntu, "Segoe UI", Verdana, sans-serif;
@@ -13,9 +13,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --main-bg: linear-gradient(-45deg, #8e4632, #6c1c3b, #125570, #105c4a);
     --main-text-color: #eee;
-    --card-bg-color: #222;
+    --card-bg-color: rgba(0,0,0,.6);
   }
 }
 
@@ -72,7 +71,6 @@ header > h1 {
 }
 
 body {
-  color-scheme: light dark;
   padding: 0;
   margin: 0;
   display: grid;
