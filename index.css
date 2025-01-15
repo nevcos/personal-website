@@ -2,6 +2,7 @@
 
 /* Settings */
 :root {
+  --main-day-elapsed-seconds: 0;
   --main-bg: linear-gradient(-30deg, #105c4a, #125570, #6c1c3b, #8e4632);
   --main-text-color: #333;
   --main-text-weight: 300;
@@ -40,10 +41,10 @@
     background-position: 0 0;
   }
   50% {
-    background-position: 100% 100%;
+    background-position: 0 0;
   }
   100% {
-    background-position: 0 0;
+    background-position: 100% 100%;
   }
 }
 
@@ -82,7 +83,8 @@ body {
 
   background: var(--main-bg);
   background-size: 400% 400%;
-  animation: gradient 60s ease infinite;
+  animation: gradient 86400s ease infinite;
+  animation-delay: calc(-1 * var(--main-day-elapsed-seconds));
 }
 
 footer {
