@@ -8,11 +8,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Filipe Costa</title>
     <script type="module">
-      function getDayElapsedSeconds() {
+      // pexels.com 4dPVSiM6SJrk6Gwx34HGNant7Xv0KBoVDpdizntpzK3kpkQfEN1vYpXi
+      function setCssMainDayElapsedSeconds() {
         const now = new Date();
-        return now.getHours() * 60 * 60 + now.getMinutes() * 60 + now.getSeconds();
+        const seconds = now.getHours() * 60 * 60 + now.getMinutes() * 60 + now.getSeconds();
+        document.documentElement.style.setProperty("--main-day-elapsed-seconds", seconds + "s");
       }
-      document.documentElement.style.setProperty("--main-day-elapsed-seconds", getDayElapsedSeconds() + "s");
+      setCssMainDayElapsedSeconds();
+      setInterval(setCssMainDayElapsedSeconds, 60_000);
     </script>
     <link
       rel="icon"
