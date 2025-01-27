@@ -8,24 +8,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Filipe Costa</title>
     <script type="module">
-      // pexels.com 4dPVSiM6SJrk6Gwx34HGNant7Xv0KBoVDpdizntpzK3kpkQfEN1vYpXi
       function setCssMainDayElapsedSeconds() {
         const now = new Date();
         const seconds = now.getHours() * 60 * 60 + now.getMinutes() * 60 + now.getSeconds();
         document.documentElement.style.setProperty("--main-day-elapsed-seconds", seconds + "s");
       }
       setCssMainDayElapsedSeconds();
-      setInterval(setCssMainDayElapsedSeconds, 60_000);
     </script>
-    <link
-      rel="icon"
-      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🖖</text></svg>"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/normalize.css@8.0.1/normalize.css"
-    />
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🖖</text></svg>" />
+    <link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;1,300;1,400&display=swap">
     <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
